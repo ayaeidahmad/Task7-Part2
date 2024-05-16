@@ -1,4 +1,5 @@
 //////////////TASK1///////////////////////
+
 const img = document.querySelector(".img")
 const img1 = document.querySelector(".img1")
 const img2 = document.querySelector(".img2")
@@ -37,7 +38,9 @@ function change(elememt) {
         section1_p.style.color= "white"
     }
 }
+
 /////////////////////TASK2////////////////////
+
 const sun = document.querySelector(".sun")
 const moon = document.querySelector(".moon")
 const section2 = document.querySelector(".section2")
@@ -62,21 +65,13 @@ function showSun(elememt) {
 
 ////////////////TASK3///////////////////
 
-const chevron_up = document.querySelectorAll(".chevron-up")
-const chevron_down = document.querySelectorAll(".chevron-down")
-const para_hiden = document.querySelectorAll(".para-hiden")
 let content = document.querySelectorAll(".content")
-
-// for (let i = 0; i < chevron_down.length; i++) {
-//     chevron_down[i].addEventListener("click" , ()=> {
-//         chevron_down[i].style.display = "none"
-//         para_hiden[i].style.display = "block"
-//         chevron_up[i].style.display = "inline"
-//     })
-// }
 
 content.forEach(element => {
     element.addEventListener("click" , ()=> {
+
+//// طريقة تانيه للتنفيذ بشكل مختلف : إذا علقت الاسطر 88 87 86 بصير التنفيذ كالتالي : لما اضغط بيظهر المحتوى المخفي ولما اضغط مرة تانيه عليه بيرجع بيختفي النص وهيك لكل العناصر التلاته
+
         content.forEach(item => {
             item.classList.remove("active")
         });
@@ -85,19 +80,9 @@ content.forEach(element => {
 });
 
 
-
-// for (let i = 0; i < chevron_up.length; i++) {
-//     chevron_up[i].addEventListener("click" , ()=> {
-//         chevron_up[i].style.display = "none"
-//         para_hiden[i].style.display = "none"
-//         chevron_down[i].style.display = "inline"
-//     })
-// }
-
-
 /////////////////////TASK4/////////////////////////
-let stars = document.querySelectorAll(".star")
 
+let stars = document.querySelectorAll(".star")
 
 function showStar(num) {
     stars.forEach((star, index) => {
@@ -108,43 +93,3 @@ function showStar(num) {
         }
     });
 }
-
-
-// function highlightStars(num) {
-
-//     stars.forEach((star, index) => {
-//       if (index < num) {
-//         star.style.color = 'gold';
-//       }
-//     });
-//   }
-
-// function resetStars() {
-//     const stars = document.querySelectorAll('.star');
-//     stars.forEach((star) => {
-//         star.style.color = 'black';
-//     });
-//   }
-
-
-// stars.forEach(element => {
-//     element.addEventListener("click" , (elememt)=> {
-        
-//         stars.forEach((star, index) => {
-//             if (index < element) {
-//                 star.style.color = 'gold';
-//             }
-//           });
-        
-
-
-
-
-        // for (let i = 0; i < stars.length; i++) {
-        //     for (let j = i ; j <= i ; j--) {
-        //         stars[j].style.color = "red"
-        //         console.log(j)
-        //     }
-        // }
-    // })
-// });

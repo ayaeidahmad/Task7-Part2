@@ -11,17 +11,14 @@
 }
 .images img {
     width: 50px;
+    cursor: pointer;
 }
 .images {
     width: 100%;
     text-align: center;
-    /* padding-top: 110px; */
-    /* position: absolute;
-    bottom: 0; */
 }
 .part2 img {
     width: 200px;
-    /* padding-top: 10px; */
 }
 .part {
     display: flex;
@@ -41,13 +38,7 @@
 /* section2 */
 .section2 {
     padding-top: 30px;
-    /* padding: 100px 0 ; */
-    /* border: 1px solid black; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */}
+}
 .section2 .contents {
     padding: 100px 0;
     width: 100%;
@@ -67,6 +58,7 @@
 .section2 .moon , .section2 .sun {
     font-size: 40px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .section2 .sun {
     display: none;
@@ -84,17 +76,21 @@
 }
 .section3 .chevron-up {
     display: none;
+    cursor: pointer;
+}
+.section3 .chevron-down {
+    cursor: pointer;
 }
 .section3 .para {
     background-color: #eee;
     width: 100%;
-    /* margin-bottom: 10px; */
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 .section3 .contents .content {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .section3 .para-hiden {
     background-color: #ccc;
@@ -140,15 +136,13 @@
 }
 .section4 .contents .stars i {
     font-size: 20px;
+    cursor: pointer;
 }
 
 @media (min-width:993px) {
     .part {
         flex-direction: row;
     }
-    /* .section1 {
-        height: max-content;
-    } */
 }
 @media (min-width:768px) and (max-width:992px) {
     .part {
